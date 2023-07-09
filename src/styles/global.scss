@@ -1,0 +1,46 @@
+@use './colors';
+
+@font-face {
+	font-family: 'Gloria Hallelujah';
+	src: url('/fonts/Gloria_Halleluja/GloriaHallelujah.woff2') format('woff2'),
+	url('/fonts/Gloria_Halleluja/GloriaHallelujah.woff') format('woff'),
+	url('/fonts/Gloria_Halleluja/GloriaHallelujah.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Noto Sans';
+	src: url('/fonts/Noto_Sans/NotoSans-Regular.woff2') format('woff2'),
+	url('/fonts/Noto_Sans/NotoSans-Regular.woff') format('woff'),
+	url('/fonts/Noto_Sans/NotoSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+:root {
+	font-size: 10px;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: colors.$primary-color;
+	
+	background-image: url("/triangle-bg.svg");
+	background-position: center;
+	background-size: cover;
+	
+	font-family: 'Noto Sans', sans-serif;
+}
+
+.margin-container {
+	width: 80%;
+	margin: 0 auto;
+}
